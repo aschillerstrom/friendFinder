@@ -1,5 +1,5 @@
 
-var friendData = require('../data/friends.js');
+var friends = require('../data/friends.js');
 var path = require('path');
 
 var totalDifference = 0;
@@ -14,18 +14,17 @@ module.exports = function(app){
 
 		var baeMatch = {
 			name: "",
-			image: "",
+			photo: "",
 			matchDifference: 1000
 		};
 		var userData 	= req.body;
-		var userName 	= userData.name;
-		var userImage 	= userData.image;
+		
 		var userScores 	= userData.scores;
 
-		var Difference = 0;
+		var totalDifference = 0;
 
 		//loop through the friends data array of objects to get each friends scores
-		for(var i = 0; i < [friends].length-1; i++){
+		for(var i = 0; i < friends.length; i++){
 			console.log(friends[i].name);
 			totalDifference = 0;
 
@@ -33,9 +32,9 @@ module.exports = function(app){
 			// absolute difference between the two and push that to the total difference variable set above
 			for(var j = 0; j < 10; j++){
 				// We calculate the difference between the scores and sum them into the totalDifference
-				totalDifference += Math.abs(parseInt(usrScores[j]) - parseInt(friends[i].scores[j]));
+				totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 				// If the sum of differences is less then the differences of the current "best match"
-				if (totalDifference <= baeMatch.friendDifference){
+				if (totalDifference <= baeMatch.matchDifference){
 
 					// Reset the bestMatch to be the new friend. 
 					baeMatch.name = friends[i].name;
