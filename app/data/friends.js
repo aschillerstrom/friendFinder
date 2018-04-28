@@ -2,9 +2,9 @@
 
 var friends = [
     {
-        name: "Khloe",
-        photo:"https://s26.postimg.cc/a9j3uidm1/khloe.jpg",
-        scores:[
+        name : "Khloe",
+        photo :"https://s26.postimg.cc/a9j3uidm1/khloe.jpg",
+        scores :[
            '5',
            '1',
            '4',
@@ -18,9 +18,9 @@ var friends = [
             ]
         },
     {
-    name:"Joe",
-    photo:"https://s26.postimg.cc/48lexjlvt/joe.jpg",
-    scores:[
+    name :"Joe",
+    photo :"https://s26.postimg.cc/48lexjlvt/joe.jpg",
+    scores :[
        '5',
        '1',
        '4',
@@ -34,9 +34,9 @@ var friends = [
         ]
   },
   {
-    name:"Katherine",
-    photo:"https://s26.postimg.cc/qlxqy04gp/katherine.jpg",
-    scores:[
+    name :"Katherine",
+    photo :"https://s26.postimg.cc/qlxqy04gp/katherine.jpg",
+    scores :[
        '2',
        '1',
        '4',
@@ -50,9 +50,9 @@ var friends = [
         ]
   },
   {
-    name:"Lucas",
-    photo:"https://s26.postimg.cc/hqwwnixop/lucas.jpg",
-    scores:[
+    name :"Lucas",
+    photo :"https://s26.postimg.cc/hqwwnixop/lucas.jpg",
+    scores :[
        '5',
        '5',
        '3',
@@ -66,9 +66,9 @@ var friends = [
         ]
   },
   {
-    name:"Mamoudou",
-    photo:"https://s26.postimg.cc/5p1itejbd/mamoudou.jpg",
-    scores:[
+    name :"Mamoudou",
+    photo :"https://s26.postimg.cc/5p1itejbd/mamoudou.jpg",
+    scores :[
        '5',
        '1',
        '4',
@@ -82,9 +82,9 @@ var friends = [
         ]
   },
   {
-    name:"Naomi",
-    photo:"https://s26.postimg.cc/s0zbmu85l/naomi.jpg",
-    scores:[
+    name :"Naomi",
+    photo :"https://s26.postimg.cc/s0zbmu85l/naomi.jpg",
+    scores :[
        '3',
        '1',
        '4',
@@ -98,9 +98,9 @@ var friends = [
         ]
   },
   {
-    name:"Nathalie",
-    photo:"https://s26.postimg.cc/wmvfv9ea1/nathalie.jpg",
-    scores:[
+    name :"Nathalie",
+    photo :"https://s26.postimg.cc/wmvfv9ea1/nathalie.jpg",
+    scores :[
        '2',
        '1',
        '4',
@@ -114,9 +114,9 @@ var friends = [
         ]
   },
   {
-    name:"Sasha",
-    photo:"https://s26.postimg.cc/o4lzqyi21/sasha.jpg",
-    scores:[
+    name :"Sasha",
+    photo :"https://s26.postimg.cc/o4lzqyi21/sasha.jpg",
+    scores :[
        '3',
        '1',
        '2',
@@ -130,9 +130,9 @@ var friends = [
         ]
   },
   {
-    name:"Zazie",
-    photo:"https://s26.postimg.cc/n2bt8f6yh/zazie.jpg",
-    scores:[
+    name :"Zazie",
+    photo :"https://s26.postimg.cc/n2bt8f6yh/zazie.jpg",
+    scores :[
        '5',
        '4',
        '2',
