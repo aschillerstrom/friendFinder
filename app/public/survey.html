@@ -18,7 +18,14 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-
+        <style>
+            body {background-color: powderblue;}
+            h2   {color: blue;}
+            h3   {color: blue;}
+            h4   {color: blue;}
+            h5   {color: blue;}
+            
+            </style>
     </head>
     <body>
         <!--survey starts-->
@@ -36,7 +43,7 @@
             <hr>
 
             <h3 class="question"><b>Question 1</b></h3>
-            <h5>You are the first to take charge in social gatherings or group projects.</h5>
+            <h4>You are the first to take charge in social gatherings or group projects.</h4>
             <select class="selectpicker" id="q1" title="Choose one of the following...">
                 <option value="1">1 (Not at all!)</option>
                 <option value="2">2 </option>
@@ -46,7 +53,7 @@
             </select>
 
             <h3 class="question"><b>Question 2</b></h3>
-            <h5>Your best friend's birthday is coming up.  Their one wish is a chocolate cake that wil take you all day to make.  How likely are you to make the cake?</h5>
+            <h4>Your best friend's birthday is coming up.  Their one wish is a chocolate cake that wil take you all day to make.  How likely are you to make the cake?</h4>
             <select  class="selectpicker" id="q2" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -57,7 +64,7 @@
 
 
             <h3 class="question"><b>Question 3</b></h3>
-            <h5> Your friend is sick and wants to you to keep them company all day and watch Netflix with them.  You already have amazing plans.  How likely are you to cancel your plans?</h5>
+            <h4> Your friend is sick and wants to you to keep them company all day and watch Netflix with them.  You already have amazing plans.  How likely are you to cancel your plans?</h4>
             <select class="selectpicker" id="q3" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -68,7 +75,7 @@
 
 
             <h3 class="question"><b>Question 4</b></h3>
-            <h5>You have plans with your friend but they are being guarded by a large angry goose. The only way to get to your friend is to fight the goose. How likely are you to commit to the fight?</h5>
+            <h4>You have plans with your friend but they are being guarded by a large angry goose. The only way to get to your friend is to fight the goose. How likely are you to commit to the fight?</h4>
             <select class="selectpicker" id="q4" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -79,7 +86,7 @@
 
 
             <h3 class="question"><b>Question 5</b></h3>
-            <h5> Your friend has been captured by a evil sea witch. The only way to save them is by wrangling the slippery, ill-tempered sea otters that guard the sea dungeon. How likely are you to wrangle the otters?</h5>
+            <h4> Your friend has been captured by a evil sea witch. The only way to save them is by wrangling the slippery, ill-tempered sea otters that guard the sea dungeon. How likely are you to wrangle the otters?</h4>
             <select class="selectpicker" id="q5" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -91,7 +98,7 @@
 
 
             <h3 class="question"><b>Question 6</b></h3>
-            <h5> Your friend turns out to be a creature that can only survive by feasting on the souls of the innocent. Do you help your friend find victims to stay alive?</h5>
+            <h4> Your friend turns out to be a creature that can only survive by feasting on the souls of the innocent. Do you help your friend find victims to stay alive?</h4>
             <select class="selectpicker" id="q6" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -102,7 +109,7 @@
 
 
             <h3 class="question"><b>Question 7</b></h3>
-            <h5> You innocently unlock your friends phone.  How much do you want to scroll through their photos, texts, etc?</h5>
+            <h4> You innocently unlock your friends phone.  How much do you want to scroll through their photos, texts, etc?</h4>
             <select class="selectpicker" id="q7" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -112,7 +119,7 @@
             </select>
 
             <h3 class="question"><b>Question 8</b></h3>
-            <h5>You text your friend but get no response.  How likely are you to text them every 3 - 4 minutes until they answer?</h5>
+            <h4>You text your friend but get no response.  How likely are you to text them every 3 - 4 minutes until they answer?</h4>
             <select class="selectpicker" id="q8" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -122,7 +129,7 @@
             </select>
 
             <h3 class="question"><b>Question 9</b></h3>
-            <h5>You are at a bar with friends.  How likely are you to order a round?</h5>
+            <h4>You are at a bar with friends.  How likely are you to order a round?</h4>
             <select class="selectpicker" id="q9" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -132,7 +139,7 @@
             </select>
 
             <h3 class="question"><b>Question 10</b></h3>
-            <h5>You are invited to go camping in the woods with no bathrooms available.  How much do you want to go?</h5>
+            <h4>You are invited to go camping in the woods with no bathrooms available.  How much do you want to go?</h4>
             <select class="selectpicker" id="q10" title="Choose one of the following...">
               <option value="1">1 (Not at all!)</option>
               <option value="2">2 </option>
@@ -172,16 +179,16 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
-                //click handler for submit button
+                //submit button
                 $( '#submit' ).on( 'click', function ( event ) {
                     event.preventDefault();
                     let newFriend = {};
-                    //flag variable for validation
+                    //check input
                     let inputComplete = false;
-                    //capturing values from form inputs
+                    //gets input
                     let name = $( '#name' ).val().trim();
                     let photo = $( '#image' ).val().trim();
-                    //triggering warning message if inputs are incomplete
+                    //warning if no pic or name
                     if ( name === '' || photo === '') {
                         inputComplete = false;
                         $( '.error' ).empty();
@@ -190,24 +197,22 @@
                         inputComplete = true;
                     }
                     if ( inputComplete ) {
-                        //creating object from inputs/questions
                         $( '.error' ).empty();
                         let newFriend = {
                             name,
                             photo,
                             scores:[]
                         }
-                        //loop that pushes values of questions into newFriend
                         
                         for ( let i = 1; i <= 10; i++ ) {
                             let score = $( '#q'+ i ).val() || "3"
                             newFriend.scores.push( score );
                             $( '#q'+ i ).val('').selectpicker('refresh');
                         }
-                        //clears inputs
+                        //clear input
                         $( '#name' ).val( '' );
                         $( '#image' ).val( '' );
-                        //posts new user to the api
+                        //new user gets put in api
                         $.post("/api/friends", newFriend)
                             .done(function(data) {   
                             console.log('data:',data)
