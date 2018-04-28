@@ -1,6 +1,6 @@
 //including hard-coded friends to get started
-
-var friends = [
+module.exports = {
+  array: [
     {
         name : "Khloe",
         photo :"https://s26.postimg.cc/a9j3uidm1/khloe.jpg",
@@ -145,7 +145,8 @@ var friends = [
        '5'
         ]
   }
-  ];
+  ]
+}
   
   
-  module.exports = friends;
+  

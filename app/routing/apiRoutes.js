@@ -1,51 +1,22 @@
-
-var friends = require('../data/friends.js');
-var path = require('path');
-
-var totalDifference = 0;
+const friends = require('../data/friends.js');
+const server = require('../../server.js');
 
 module.exports = function(app){
-	app.get('/api/friends', function(req, res){
-		res.json(friends);
+	let user;
+	app.post("/api/friends", function (req, res) {
+		module.exports.user = req.body;
+		friends.array.push(req.body);
+		console.log(`${req.body.name} successfully added!`)
+		res.json({});
 	});
 
+	app.get("/bestFriend", function (req,res) {
+		let bestFriend = server.lookForFriends();
+		res.json(bestFriend);
 
-	app.post('/api/friends', function(req, res){
-
-		var baeMatch = {
-			name: "",
-			photo: "",
-			matchDifference: 1000
-		};
-		var userData 	= req.body;
-		
-		var userScores 	= userData.scores;
-
-		var totalDifference = 0;
-
-		//loop through the friends data array of objects to get each friends scores
-		for(var i = 0; i < friends.length; i++){
-			console.log(friends[i].name);
-			totalDifference = 0;
-
-			//loop through that friends score and the users score and calculate the 
-			// absolute difference between the two and push that to the total difference variable set above
-			for(var j = 0; j < 10; j++){
-				// We calculate the difference between the scores and sum them into the totalDifference
-				totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-				// If the sum of differences is less then the differences of the current "best match"
-				if (totalDifference <= baeMatch.matchDifference){
-
-					// Reset the bestMatch to be the new friend. 
-					baeMatch.name = friends[i].name;
-					baeMatch.photo = friends[i].photo;
-					baeMatch.matchDifference = totalDifference;
-				}
-			}
-		}
-
-		friends.push(userData);
- 
-		res.json(baeMatch);
 	});
-};
+
+	app.get("/api/:friends?", function(req, res) {
+	  res.json(friends.array);
+	});
+}
